@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreeOS Desktop 演示</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css">
+    <style>
+        .reveal {
+            font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+        }
+        .reveal h1, .reveal h2, .reveal h3 {
+            font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+            text-transform: none;
+        }
+        .reveal .slides section img {
+            max-height: 500px;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .reveal .slides section {
+            text-align: center;
+        }
+        .reveal .slides section.left {
+            text-align: left;
+        }
+        .reveal .progress {
+            height: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- 封面 -->
+            <section>
+                <h1>FreeOS Desktop</h1>
+                <h3>基于 FreeRTOS 的嵌入式桌面操作系统</h3>
+                <p>技术架构与实现</p>
+            </section>
+
+            <!-- 目录 -->
+            <section>
+                <h2>目录</h2>
+                <ul>
+                    <li>项目概述与系统启动</li>
+                    <li>日志系统与应用框架</li>
+                    <li>渲染系统与UI组件</li>
+                    <li>现有应用与开发规范</li>
+                    <li>桌面系统与通用组件</li>
+                    <li>硬件驱动层详解</li>
+                </ul>
+            </section>
+
+            <!-- 第一部分 -->
+            <section>
+                <section>
+                    <h2>第一部分</h2>
+                    <h3>项目概述与系统启动</h3>
+                </section>
+                <section class="left">
+                    <h3>系统架构</h3>
+                    <ul>
+                        <li>基于 FreeRTOS 实时操作系统</li>
+                        <li>轻量级桌面环境</li>
+                        <li>模块化设计</li>
+                        <li>硬件抽象层</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>启动流程</h3>
+                    <p>系统启动 → 硬件初始化 → 内核启动 → 桌面加载 → 应用启动</p>
+                </section>
+            </section>
+
+            <!-- 第二部分 -->
+            <section>
+                <section>
+                    <h2>第二部分</h2>
+                    <h3>日志系统与应用框架</h3>
+                </section>
+                <section class="left">
+                    <h3>日志系统特性</h3>
+                    <ul>
+                        <li>多级别日志输出</li>
+                        <li>异步日志写入</li>
+                        <li>日志轮转机制</li>
+                        <li>远程日志监控</li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- 第三部分 -->
+            <section>
+                <section>
+                    <h2>第三部分</h2>
+                    <h3>渲染系统与UI组件</h3>
+                </section>
+                <section class="left">
+                    <h3>渲染架构</h3>
+                    <ul>
+                        <li>双缓冲渲染</li>
+                        <li>硬件加速支持</li>
+                        <li>脏矩形优化</li>
+                        <li>字体渲染引擎</li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- 第四部分 -->
+            <section>
+                <section>
+                    <h2>第四部分</h2>
+                    <h3>现有应用与开发规范</h3>
+                </section>
+                <section class="left">
+                    <h3>内置应用</h3>
+                    <ul>
+                        <li>文件管理器</li>
+                        <li>文本编辑器</li>
+                        <li>图片查看器</li>
+                        <li>终端模拟器</li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- 第五部分 -->
+            <section>
+                <section>
+                    <h2>第五部分</h2>
+                    <h3>桌面系统与通用组件</h3>
+                </section>
+                <section class="left">
+                    <h3>桌面组件</h3>
+                    <ul>
+                        <li>任务栏</li>
+                        <li>开始菜单</li>
+                        <li>桌面图标</li>
+                        <li>窗口管理器</li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- 第六部分 -->
+            <section>
+                <section>
+                    <h2>第六部分</h2>
+                    <h3>硬件驱动层详解</h3>
+                </section>
+                <section class="left">
+                    <h3>驱动架构</h3>
+                    <ul>
+                        <li>显示驱动</li>
+                        <li>触摸屏驱动</li>
+                        <li>存储驱动</li>
+                        <li>网络驱动</li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- 结束页 -->
+            <section>
+                <h1>感谢观看</h1>
+                <h3>FreeOS Desktop 技术手册</h3>
+                <p>了解更多请访问文档</p>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            slideNumber: 'c/t',
+            showSlideNumber: 'all',
+            transition: 'slide',
+            transitionSpeed: 'default',
+            backgroundTransition: 'fade',
+            width: 1200,
+            height: 700,
+            margin: 0.04,
+            keyboard: {
+                13: 'next', // 回车下一页
+                32: 'next', // 空格下一页
+                33: 'prev', // PageUp上一页
+                34: 'next'  // PageDown下一页
+            }
+        });
+    </script>
+</body>
+</html>
