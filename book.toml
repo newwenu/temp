@@ -1,0 +1,9 @@
+[book]
+title = "FreeOS Desktop 技术手册"
+authors = ["FreeOS Team"]
+description = "基于 FreeRTOS 的嵌入式桌面操作系统技术文档"
+language = "zh"
+src = "."
+
+[build]
+build-dir = "book"
